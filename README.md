@@ -1,5 +1,4 @@
 # php-registration-system
-# Registration System
 
 ## Description
 This project is a basic user registration system designed to demonstrate how to create a secure and user-friendly registration process. It includes an HTML/CSS form for users to sign up, JavaScript for client-side validation, a MySQL database to store user information, and PHP scripts for server-side processing and data storage.
