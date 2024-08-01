@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-primary: #845EC2;
+    --color-success: #4D8076;
+    --color-error: #C34A36;
+    --color-black: #4B4453;
+    --color-white: #FCF8FF;
+    --font-primary: 'Poppins', sans-serif;
+    --font-size-small: 16px;
+    --font-size-medium: 24px;
+    --font-size-large: 32px;
+}  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    /* outline: 1px dashed red; */
+}
+
+body {
+    background-image: url(images/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 25px 25px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.error {
+    font-size: small;
+    display: flex;
+    justify-content: right;
+    color: #ff8787;
+}
+
+.top {
+    color: var(--color-white);
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.bottom {
+    color: var(--color-white);
+    font-size: small;
+    display: flex;
+    justify-content: center;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.two-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.two-input {
+    display: flex;
+    flex-direction: row;
+}
+
+.two-input-field {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.input {
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 32px;
+    color: var(--color-white);
+    padding: 0 0 0 25px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.date-input {
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 32px;
+    color: var(--color-white);
+    padding: 0 0 0 25px;;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+input::-webkit-calendar-picker-indicator{
+    display: none;
+}
+
+label {
+    color: var(--color-white);
+    font-size: small;
+    display: flex;
+    justify-content: left;
+}
+
+::-webkit-input-placeholder {
+    color: var(--color-white);
+}
+
+.submit {
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    font-size: 16px;
+    height: 45px;
+    width: 100%;
+    background: #ffffffcc;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit:hover {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+#successful-register {
+    font-size: 12px;
+    color: #87ff87;
+    text-align: center;
+    margin: 5px;
+}
+
+#invalid-sign-in,
+#invalid-sign-up {
+    font-size: 12px;
+    color: #ff8787;
+    text-align: center;
+    margin: 5px;
+}
+
+.password-container {
+    position: relative;
+}
+
+#password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+#error {
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    color: #ff8787;
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-primary: #845EC2;
+    --color-success: #4D8076;
+    --color-error: #C34A36;
+    --color-black: #161616;
+    --color-white: #FCF8FF;
+    --font-primary: 'Poppins', sans-serif;
+    --font-size-small: 16px;
+    --font-size-medium: 24px;
+    --font-size-large: 32px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    color: var(--color-white);
+}
+
+body {
+    background-image: url(images/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.sign-out {
+    display: flex;
+    justify-content: right;
+    margin-top: 32px;
+    margin-right: 32px;
+}
+
+.sign-out a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: large;
+}
+
+.user {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: var(--color-white);
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.info {
+    display: flex;
+    gap: 24px;
+}
+
+.personal-info,
+.contact-info {
+    color: var(--color-white);
+    height: 200px;
+    width: 400px;
+    padding: 24px;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
